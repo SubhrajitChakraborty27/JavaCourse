@@ -1,0 +1,15 @@
+package com;
+class ThreadExample extends Thread //Inheriting the thread class
+{
+public void run()
+{
+System.out.println("I am a Thread, I am running");
+}
+public static void main(String[] args) 
+{
+ThreadExample t = new ThreadExample();//Creating a thread
+t.start();
+String s = t.getName();//Gets the name of the Thread
+System.out.println(s);
+}
+}
