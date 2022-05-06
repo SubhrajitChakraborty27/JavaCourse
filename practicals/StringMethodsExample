@@ -1,0 +1,48 @@
+package com;
+
+public class StringMethodsExample {
+public void show() {
+String s = "Anudip Foundation Skill Developement Center Dunlop";
+String s1 = "   Capgemini   ";
+System.out.println("Upper case is :" + s.toUpperCase());//Converting the string to upper case
+System.out.println("Lower case is :" + s1.toLowerCase());//Converting the string to lower case
+System.out.println(s1);
+System.out.println("Trim is :"+ s1.trim());//Removing the leading & trailing spaces from string s1
+System.out.println("Startwith is :" + s.startsWith("Anu"));//Checking whether the string starts with the given substring 
+System.out.println("Endswith is :" + s.startsWith("lop"));
+System.out.println("Char at is :" + s.charAt(3));//Getting the character value at index position 3
+System.out.println("Char at is :" + s.charAt(15));
+System.out.println("Length is :" + s.length());//finding the length of the string
+int a=20;
+String s2 = String.valueOf(a);//Converting integer 'a' into string
+System.out.println(s2+30);//concatenating two strings
+System.out.println("Replace is :"+s.replace("Developement","Career Developement"));//replacing a substring
+}
+public void myFunction() {
+String m = "Reya";
+String m4 = "Ishika";
+String m1 = "Mamta";
+String m3 = "Arindam";
+String m2 = new String("Mamta");
+System.out.println(m.equals(m1));//checking whether 2 strings are equal or not/do not ignore case sensitivity
+System.out.println(m.equalsIgnoreCase(m2));//Comparing while ignoring the case sensitivity
+System.out.println(m==m2);
+System.out.println(m3==m1);
+System.out.println(m4.compareTo(m));
+System.out.println(m.compareTo(m4));
+System.out.println(m1.compareTo(m3));
+}
+public void display() {
+String s = "Tuhina" + "Subhankar";
+System.out.println(s);
+String s1 = 80 + 45 + "Madhurima" + 20 + 10;
+System.out.println(s1);
+System.out.println(s.concat(s1));
+}
+public static void main(String[] args) {
+StringMethodsExample m = new StringMethodsExample();
+m.show();
+m.myFunction();
+m.display();
+}
+}
