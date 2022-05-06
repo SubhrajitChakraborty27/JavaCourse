@@ -1,0 +1,28 @@
+package com;
+
+public class DaemonThreads extends Thread {
+public void run()
+{
+	if (Thread.currentThread().isDaemon())
+	{
+		System.out.println("I am a daemon Thread");
+	}
+	else
+	{
+		System.out.println("I am user");
+	}
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+DaemonThreads t = new DaemonThreads();
+DaemonThreads t1 = new DaemonThreads();
+DaemonThreads t2 = new DaemonThreads();
+		t1.setDaemon(true);
+		t.start();
+		t1.start();
+		t2.start();
+	}
+		
+
+
+}
