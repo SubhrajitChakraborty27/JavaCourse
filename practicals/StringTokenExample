@@ -1,0 +1,20 @@
+package com;
+import java.util.StringTokenizer;
+
+public class StringTokenExample {
+public void myy() {
+StringTokenizer t = new StringTokenizer("Anudip Foundation and Career Developement Center"," ");
+while (t.hasMoreTokens())//Executes until it doesn't get any more tokens
+{
+System.out.println(t.nextToken());//prints the tokens
+}
+StringTokenizer st = new StringTokenizer("I am Mamta,Staying in Mumbai,Working in Anudip");
+while (st.hasMoreTokens()) {
+System.out.println("Next Token : " + st.nextToken(","));//prints the tokens while encountered a comma 
+}
+}
+public static void main(String[] args) {
+StringTokenExample m = new StringTokenExample();//Creating the object of the specified class
+m.myy();
+}
+}
