@@ -1,0 +1,20 @@
+package com;
+class NonStaticNestedClassExample 
+{
+	int a = 5;
+	private int b = 15;
+		class Inner//Creating an inner class
+	{
+		int res = a + b;
+		void show() 
+		{
+		System.out.println("Value of res :" + res);
+		}
+	}
+	public static void main(String[] args)
+	{
+		NonStaticNestedClassExample c = new NonStaticNestedClassExample();	
+		NonStaticNestedClassExample.Inner i = c.new Inner();//Creating the object of the inner class
+		i.show();//calling the method of the inner class
+	}
+}
