@@ -1,0 +1,27 @@
+package com;
+
+public class StringExample {
+	
+		public void show() {
+		char [] arr = {'j','e','e','t'};
+		String s = new String(arr);//converting char array to string    
+		System.out.println("Value is :" +s);
+		System.out.println(arr);
+		}
+		public void myFunction() {
+		String m = "Subhrajit";//creating string by Java string literal 
+		String m1 = "Indrashis";
+		String m2 = new String("Rahul");//creating Java string by new keyword
+		System.out.println(m);
+		System.out.println(m1);
+		System.out.println(m2);
+		}
+		
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringExample s = new StringExample();
+		s.show();
+		s.myFunction();
+		}
+	}
+
