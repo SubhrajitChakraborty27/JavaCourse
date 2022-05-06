@@ -9,8 +9,7 @@ class InputStreamEx
 	try {
 		FileInputStream f = new FileInputStream("E://test.txt");
 		int i = 0;
-	//	while((i=f.read())!= -1)
-		for(;(i= f.read())!= -1;)
+		while((i=f.read())!= -1)
 		System.out.print((char)i);
 		f.close();
 	}
