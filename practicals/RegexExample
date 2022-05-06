@@ -1,0 +1,26 @@
+package com;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+class RegexExample 
+{
+public static void main(String[] args) 
+{
+Pattern p = Pattern.compile(".a");//. represents single character 
+Matcher m = p.matcher("sa");//Checking whether it is matching with .a
+boolean b = m.matches();
+
+boolean bb = Pattern.compile("..m").matcher("ppm").matches();
+
+boolean b1 = Pattern.matches("[a-zA-Z0-9]{8,}","sub123ppp");//providing character classes and quantifiers
+
+boolean b2 = Pattern.matches("[6789]{1}[0-9]{9}","8348222888");
+
+boolean b3 = Pattern.matches("^[a-z0-9+_.-]*@[a-zA-Z0-9]*+\\.[a-z]{3}","cjeet2702@gamil9.com");
+
+boolean b4 = Pattern.matches("^[a-zA-Z0-9+_.-]{8,}","jeet@123_.");
+
+System.out.println(b + " " + bb + " " + b1 + " " + b2 + " " + b3 + " " + b4);
+
+}
+}
