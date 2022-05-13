@@ -1,0 +1,20 @@
+import java.io.BufferedReader;  
+import java.io.FileReader;  
+public class NumberofWords  
+{  
+public static void main(String[] args) throws Exception {  
+String d;  
+int count = 0;  
+          
+FileReader file = new FileReader("wordfile.txt");  
+BufferedReader fc = new BufferedReader(file);  
+              
+while((d = fc.readLine()) != null) 
+{  
+String words[] = d.split(" ");  
+count = count + words.length;  
+}  
+System.out.println("Number of words present in given file: " + count);  
+fc.close();  
+}  
+}
