@@ -1,0 +1,39 @@
+package com;
+
+import java.util.Vector;
+
+public class VectorEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Vector <Integer> al = new Vector<Integer>();
+		al.add(18);
+		al.add(28);
+		al.add(40);
+		al.add(5);
+		al.add(6);
+		al.add(7);
+	
+	System.out.println(al);
+	
+	if (al.contains(18))
+	{
+		System.out.println("present");
+	}
+	else
+	{
+		System.out.println("not present");
+	}
+	if (al.contains(22))
+	{
+		System.out.println("present");
+	}
+	else
+	{
+		System.out.println("not present");
+	}
+	}
+	
+
+}
