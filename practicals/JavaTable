@@ -1,0 +1,18 @@
+package com;
+
+public class JavaTable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int result = 2;
+		int n = 10;
+		for (int a = 1	; a<=n;a++ )
+		{
+			System.out.println(result + "*" + a + "= "+result*a);
+		
+		}
+
+	}
+
+}
