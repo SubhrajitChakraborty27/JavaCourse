@@ -1,0 +1,32 @@
+package com;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
+
+public class ArraytoArraylist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List <String> al = new ArrayList<String>();
+		al.add("mamta");
+		al.add("jeet");
+		al.add("pallabi");
+		al.add("rahul");
+		al.add("indra");
+		al.add("pranjal");
+		System.out.println("List to Array");
+		String [] arr = al.toArray(new String [al.size()]);
+		for (String s:arr)
+		{
+			System.out.println(s);
+		}
+		System.out.println("Array to List");
+		List <String> all = new ArrayList<String>();
+		all = Arrays.asList(arr);
+		System.out.println(all);
+		
+	}
+	
+
+}
