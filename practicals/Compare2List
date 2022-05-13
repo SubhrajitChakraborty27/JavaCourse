@@ -1,0 +1,37 @@
+package com;
+
+import java.util.LinkedList;
+
+public class CompareList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<String> al = new LinkedList<String>();
+		al.add("mamta");
+		al.add("jeet");
+		al.add("pallabi");
+		al.add("rahul");
+		al.add("indra");
+		al.add("pranjal");
+		
+		System.out.println(al);
+		
+		LinkedList<String> al1 = new LinkedList<String>();
+		al1.add("mamta");
+		al1.add("jeet");
+		al1.add("pallabi");
+		al1.add("rahul");
+		al1.add("indra");
+		al1.add("pranjal");
+		
+		System.out.println(al1);
+		
+		boolean b = al.equals(al1);
+		System.out.println(b);
+		
+		al.add("redrose");
+		boolean b1 = al.equals(al1);
+		System.out.println(b1);
+	}
+
+}
