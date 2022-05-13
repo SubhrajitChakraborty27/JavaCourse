@@ -1,0 +1,52 @@
+package com;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class Linkedlisteg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedList<String> al = new LinkedList<String>();
+		al.add("mamta");
+		al.add("jeet");
+		al.add("pallabi");
+		al.add("rahul");
+		al.add("indra");
+		al.add("pranjal");
+		
+		Iterator <String> itr = al.iterator();
+		
+		 while(itr.hasNext()) 
+		 {
+			 System.out.println(itr.next());
+		  
+		 }
+		 System.out.println();
+		 al.removeLast();
+		 al.removeFirst();
+		 al.remove(2);
+		 
+		 System.out.println("After Removal");
+		 
+		 Iterator<String> itr1 = al.iterator();
+		 
+		 while(itr1.hasNext())
+		 {
+			 System.out.println(itr1.next());
+		 }
+		 System.out.println();
+		 System.out.println("Removal Done");
+		 System.out.println();
+		 
+		 Iterator<String> ittr = al.descendingIterator();
+		 
+		 System.out.println("After Reverse");
+		 while(ittr.hasNext())
+		 {
+			 System.out.println(ittr.next());
+		 }
+		
+		
+	}
+
+}
